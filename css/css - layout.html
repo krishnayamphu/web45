@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: tomato;
+            width: 800px;
+            margin: 15px auto;
+            padding: 15px;
+            height: 160px;
+        }
+
+        .content {
+            width: 70%;
+            float: left;
+        }
+
+        img {
+            width: 28%;
+        }
+
+        .float-left {
+            float: left;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to Web Desing</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est doloremque quas possimus voluptatibus
+                voluptas incidunt reiciendis nostrum ipsam, ducimus minima vero velit fugiat temporibus. Temporibus
+                quidem maiores dolorem. Placeat, aspernatur?</p>
+        </div>
+        <img src="boat.jpg" alt="boat">
+    </div>
+
+    <div class="container">
+        <img class="float-left" src="boat.jpg" alt="boat">
+        <div class="content">
+            <h1>Welcome to Web Desing</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est doloremque quas possimus voluptatibus
+                voluptas incidunt reiciendis nostrum ipsam, ducimus minima vero velit fugiat temporibus. Temporibus
+                quidem maiores dolorem. Placeat, aspernatur?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
