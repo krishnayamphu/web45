@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type='checkbox'],
+        input[type='radio'] {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter name" id="name" required>
+        <input type="password" placeholder="Password">
+        <input type="email" placeholder="example@email.com">
+        <input type="search" placeholder="searh here">
+        <input type="checkbox" checked>checkbox1
+        <input type="checkbox">checkbox2
+        <br>
+        <input type="radio" name="r" checked>radio1
+        <input type="radio" name="r">radio2
+        <input type="file">
+        <input type="color">
+        <input type="date">
+        <input type="time">
+        <input type="datetime-local">
+        <input type="range" min="0" max="100" value="50">
+        <input type="number">
+
+        <textarea name="" cols="30" rows="10"></textarea>
+        <select name="" id="">
+            <option value="nepal">Nepal</option>
+            <option value="nepal">China</option>
+            <option value="nepal">INdia</option>
+            <option value="nepal">Japan</option>
+            <option value="nepal">Nepal</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
