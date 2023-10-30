@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Web icons</title>
+    <style>
+        .green {
+            color: green;
+        }
+
+        .big-icon {
+            font-size: 60px;
+        }
+
+        .btn-users {
+            background-color: tomato;
+            padding: 5px 10px;
+            color: white;
+            border: none;
+            border-radius: 2px;
+        }
+
+        .btn-users:hover {
+            background-color: rgb(148, 51, 34);
+        }
+    </style>
+</head>
+
+<body>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-solid fa-phone"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <h5>Styling Icons</h5>
+    <i class="fa-solid fa-house green"></i>
+    <i class="fa-solid fa-house" style="color:red"></i>
+
+    <h5>Sizing Icons</h5>
+    <i class="fa-solid fa-house fa-2xs"></i>
+    <i class="fa-solid fa-house fa-xs"></i>
+    <i class="fa-solid fa-house fa-sm"></i>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-house fa-lg"></i>
+    <i class="fa-solid fa-house fa-xl"></i>
+    <i class="fa-solid fa-house fa-2xl"></i>
+    <i class="fa-solid fa-house big-icon"></i>
+
+    <h5>Fixed Width Icons</h5>
+    <div style="font-size: 2rem;">
+        <div><i class="fa-solid fa-skating fa-fw" style="background:DodgerBlue"></i> Skating</div>
+        <div><i class="fa-solid fa-skiing fa-fw" style="background:SkyBlue"></i> Skiing</div>
+        <div><i class="fa-solid fa-skiing-nordic fa-fw" style="background:DodgerBlue"></i> Nordic Skiing</div>
+        <div><i class="fa-solid fa-snowboarding fa-fw" style="background:SkyBlue"></i> Snowboarding</div>
+        <div><i class="fa-solid fa-snowplow fa-fw" style="background:DodgerBlue"></i> Snowplow</div>
+    </div>
+
+    <h5>Icons in a List</h5>
+    <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>List icons can</li>
+        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>be used to</li>
+        <li><span class="fa-li"><i class="fa-solid fa-spinner fa-pulse"></i></span>replace bullets</li>
+        <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>in lists</li>
+    </ul>
+
+    <h5>Rotate Icons</h5>
+    <div class="fa-3x">
+        <i class="fa-solid fa-snowboarding"></i>
+        <i class="fa-solid fa-snowboarding fa-rotate-90"></i>
+        <i class="fa-solid fa-snowboarding fa-rotate-180"></i>
+        <i class="fa-solid fa-snowboarding fa-rotate-270"></i>
+        <i class="fa-solid fa-snowboarding fa-flip-horizontal"></i>
+        <i class="fa-solid fa-snowboarding fa-flip-vertical"></i>
+        <i class="fa-solid fa-snowboarding fa-flip-both"></i>
+    </div>
+
+    <h5>Animating Icons</h5>
+    <div class="fa-3x">
+        <i class="fa-solid fa-circle-plus fa-beat"></i>
+        <i class="fa-solid fa-heart fa-beat"></i>
+        <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;"></i>
+        <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i>
+        <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>
+    </div>
+
+    <div class="fa-3x">
+        <i class="fa-solid fa-triangle-exclamation fa-fade"></i>
+        <i class="fa-solid fa-skull-crossbones fa-fade"></i>
+        <i class="fa-solid fa-desktop-arrow-down fa-fade"></i>
+        <i class="fa-solid fa-i-cursor fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+    </div>
+
+    <div class="fa-3x">
+        <i class="fa-solid fa-triangle-person-digging fa-beat-fade"></i>
+        <i class="fa-solid fa-square-exclamation fa-beat-fade"></i>
+        <i class="fa-solid fa-poo-bolt fa-beat-fade"
+            style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;"></i>
+        <i class="fa-solid fa-circle-info fa-beat-fade"
+            style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;"></i>
+    </div>
+
+    <div class="fa-3x">
+        <i class="fa-solid fa-basketball fa-bounce"></i>
+        <i class="fa-solid fa-volleyball fa-bounce"></i>
+
+        <!-- bounce animation with no "squish" -->
+        <i class="fa-solid fa-frog fa-bounce"
+            style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i>
+
+        <!-- bounce animation with no "squish" or "rebound" -->
+        <i class="fa-solid fa-envelope fa-bounce"
+            style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"></i>
+    </div>
+
+    <div class="fa-3x">
+        <i class="fa-solid fa-compact-disc fa-flip"></i>
+        <i class="fa-solid fa-camera-rotate fa-flip"></i>
+        <i class="fa-solid fa-cassette-tape fa-flip"></i>
+        <i class="fa-solid fa-scroll fa-flip" style="--fa-flip-x: 1; --fa-flip-y: 0;"></i>
+        <i class="fa-solid fa-money-check-dollar fa-flip" style="--fa-animation-duration: 3s;"></i>
+    </div>
+
+    <div class="fa-3x">
+        <i class="fa-solid fa-bell fa-shake"></i>
+        <i class="fa-solid fa-lock fa-shake"></i>
+        <i class="fa-solid fa-stopwatch fa-shake"></i>
+        <i class="fa-solid fa-bomb fa-shake"></i>
+    </div>
+
+    <div class="fa-3x">
+        <i class="fa-solid fa-sync fa-spin"></i>
+        <i class="fa-solid fa-circle-notch fa-spin"></i>
+        <i class="fa-solid fa-cog fa-spin"></i>
+        <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
+        <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+        <i class="fa-solid fa-spinner fa-spin-pulse fa-spin-reverse"></i>
+    </div>
+
+    <hr>
+
+    <button>
+        <i class="fa-solid fa-paper-plane"></i>
+        Send
+    </button>
+
+    <button>
+        <i class="fa-solid fa-user-plus"></i>
+        Add User
+    </button>
+    <button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <button class="btn-users">
+        <i class="fa-solid fa-users"></i> Add Users
+    </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
