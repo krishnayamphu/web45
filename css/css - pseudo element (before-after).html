@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1::before {
+            content: open-quote;
+        }
+
+        h1::after {
+            content: close-quote;
+            color: red;
+        }
+
+        .title::after {
+            content: no-close-quote;
+        }
+
+        p::after {
+            content: "👌";
+        }
+
+        h2::after {
+            content: url('dreamer.gif');
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1 class="title">Hello World</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ut quam dolorem molestias vero ipsa quidem
+        soluta, error quibusdam veritatis minus quis dolorum temporibus cupiditate vitae et quisquam sapiente ad.</p>
+
+    <h2>I am a Dreamer</h2>
+
+</body>
+
+</html>
