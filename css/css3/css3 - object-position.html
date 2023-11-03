@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        img {
+            width: 200px;
+            height: 100px;
+            border: 5px solid red;
+            margin: 15px;
+            object-fit: contain;
+        }
+
+        .cover {
+            object-fit: cover;
+        }
+
+        .contain {
+            object-fit: contain;
+        }
+
+        .thumbnail {
+            width: 100px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../temple.jpg" alt="">
+    <img style="object-position: left;" src="../temple.jpg" alt="">
+    <img style="object-position: right;" src="../temple.jpg" alt="">
+    <hr>
+    <img class="thumbnail" src="../boat.jpg" alt="">
+    <img style="object-position: top;" class="thumbnail" src="../boat.jpg" alt="">
+    <img style="object-position: bottom;" class="thumbnail" src="../boat.jpg" alt="">
+
+</body>
+
+</html>
