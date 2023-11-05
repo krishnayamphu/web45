@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .row {
+            display: flex;
+            border: 2px solid red;
+            margin: 15px;
+            height: 100px;
+        }
+
+        .item {
+            background-color: green;
+        }
+
+        .item:nth-child(even) {
+            background-color: orange;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-center {
+            align-items: center;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row stretch">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+
+    <div class="row flex-start">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+
+    <div class="row flex-center">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+
+    <div class="row flex-end">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+
+    <div class="row baseline">
+        <div class="item">Item1</div>
+        <div class="item">Item2<br>other content</div>
+        <div class="item">Item3</div>
+    </div>
+</body>
+
+</html>
