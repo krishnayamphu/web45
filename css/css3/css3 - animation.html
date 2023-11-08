@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        @keyframes changeBg {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 90%;
+                transform: rotate(360deg);
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg) rotateX(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg) rotateX(15deg);
+            }
+
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            animation-name: changeBg;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-delay: 0;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            top: 50px;
+            animation: move 4s linear alternate infinite;
+        }
+
+        .container {
+            border: 2px solid red;
+            position: relative;
+            top: 100px;
+            perspective: 1000px;
+            padding: 15px;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            animation: rotate 2s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2">box2</div>
+
+    <div class="container">
+        <div class="item">Box</div>
+    </div>
+</body>
+
+</html>
