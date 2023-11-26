@@ -1,0 +1,24 @@
+
+/* nav */
+.navbar-brand img{
+    width: 30px;
+}
+
+/* slider */
+#slider img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.site-footer{
+    background-color: rgb(3, 2, 35);
+}
+
+/* formtting */
+.btn,.form-control{
+    border-radius: 0;
+}
+
+.bg-success{
+    /* background-color: red!important; */
+}
