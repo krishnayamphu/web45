@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <p id="text"></p>
+    <img src="" id="photo" alt="">
+    <br><br>
+    <input type="text" id="name">
+    <br><br>
+    <input type="text" id="address" value="Patan">
+
+    <script>
+        document.getElementById("text").innerHTML = "Hello World";
+        document.getElementById("text").style.textAlign = "center";
+        document.getElementById("text").style.color = "green";
+        document.getElementById("text").style.backgroundColor = "orange";
+
+        document.getElementById("photo").src = "boat.jpg";
+        document.getElementById("photo").style.width = "100px"
+
+        document.getElementById("name").value = "Aptech";
+
+        let address = document.getElementById("address").value;
+        alert(address);
+    </script>
+</body>
+
+</html>

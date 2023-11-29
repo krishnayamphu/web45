@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    Date (D-M-Y):
+    <select name="day">
+        <script>
+            for (let i = 1; i <= 30; i++) {
+                document.write("<option>" + i + "</option>");
+            } 
+        </script>
+    </select>
+    <select name="month">
+        <script>
+            for (let i = 1; i <= 12; i++) {
+                document.write("<option>" + i + "</option>");
+            } 
+        </script>
+    </select>
+    <select name="year">
+        <script>
+            for (let i = 1900; i <= 2023; i++) {
+                document.write("<option>" + i + "</option>");
+            } 
+        </script>
+    </select>
+
+</body>
+
+</html>
