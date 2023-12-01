@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <form name="frm" onsubmit="return validate()">
+        <input type="text" name="name" placeholder="Enter name">
+        <br><br>
+        <input type="password" name="password" placeholder="Enter Password">
+        <br><br>
+        <input type="password" name="cpassword" placeholder="Enter Confirm Password">
+        <br><br>
+        <button>Submit</button>
+    </form>
+    <script>
+        function validate() {
+            let name = document.forms['frm'].name.value;
+            let password = document.forms['frm'].password.value;
+            let cpassword = document.forms['frm'].cpassword.value;
+            if (name == "") {
+                alert("name field can't be blank");
+                document.forms['frm'].name.focus();
+                return false
+            }
+            else if (password == "") {
+                alert("password field can't be blank");
+                document.forms['frm'].password.focus();
+                return false
+            } else if (cpassword == "") {
+                alert("confirm password field can't be blank");
+                document.forms['frm'].cpassword.focus();
+                return false
+            } else if (password != cpassword) {
+                alert("confirm password do not match");
+                document.forms['frm'].cpassword.select();
+                return false
+            } else {
+                alert(name);
+                return true;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #photo {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="" alt="" id="photo">
+    <script>
+        function changePic() {
+            const picture = ["a.png", "b.jpg", "c.png"];
+            let index = Math.floor(Math.random() * picture.length);
+            document.getElementById("photo").src = picture[index];
+            console.log(picture[index]);
+        }
+
+        setInterval(changePic, 1000);
+    </script>
+</body>
+
+</html>
