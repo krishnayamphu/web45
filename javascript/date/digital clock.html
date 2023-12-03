@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .clock {
+            background-color: black;
+            display: inline-block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 4px #868686;
+        }
+
+        .clock input {
+            background-color: transparent;
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            width: 340px;
+            border-radius: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <input type="text" id="clock">
+    </div>
+
+    <script>
+        function digitalClock() {
+            const time = new Date();
+            let h = time.getHours(); //0-23
+            if (h > 12)
+                h = h - 12;
+            let m = time.getMinutes();
+            let s = time.getSeconds();
+            // let ms = time.getMilliseconds();
+            let data = h + " : " + m + " : " + s;
+            document.getElementById("clock").value = data;
+        }
+        setInterval(digitalClock, 0);
+    </script>
+</body>
+
+</html>

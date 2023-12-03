@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <img src="" alt="" id="photo">
+    <script>
+        const time = new Date();
+        document.write(time);
+
+        let d = time.getDay() + 1; //0-6
+        let dd = time.getDate();
+        let mo = time.getMonth() + 1; //0-11
+        let y = time.getFullYear();
+
+        let h = time.getHours(); //0-23
+        let m = time.getMinutes();
+        let s = time.getSeconds();
+        let ms = time.getMilliseconds();
+
+        document.write("<br>" + d + " " + dd + "/" + mo + "/" + y);
+        document.write("<br>" + h + " : " + m + " : " + s + " : " + ms);
+    </script>
+</body>
+
+</html>
