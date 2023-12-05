@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            background-color: tomato;
+            text-shadow: 0 2px 1px green;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Animate</button>
+    <p>Hello World</p>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#btn1").click(function () {
+                $("p").animate({
+                    "fontSize": "24px",
+                    "padding": "15px",
+
+                }, 1000, function () {
+                    alert("animation complete")
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

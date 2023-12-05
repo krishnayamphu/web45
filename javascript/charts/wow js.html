@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        p {
+            padding: 30px;
+            width: 50%;
+            margin: 30px;
+        }
+
+        .wow {
+            background-color: aquamarine;
+            width: 50%;
+            margin: 50px auto;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos deleniti sit distinctio voluptatum amet fuga
+        possimus, rem, ullam itaque repellat ipsam quibusdam. Deserunt vel numquam cupiditate, qui aliquid culpa
+        voluptate?</p>
+
+
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos deleniti sit distinctio voluptatum amet fuga
+        possimus, rem, ullam itaque repellat ipsam quibusdam. Deserunt vel numquam cupiditate, qui aliquid culpa
+        voluptate?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos deleniti sit distinctio voluptatum amet fuga
+        possimus, rem, ullam itaque repellat ipsam quibusdam. Deserunt vel numquam cupiditate, qui aliquid culpa
+        voluptate?</p>
+    <div class="wow animate__fadeOutDown">
+        Content to Reveal Here
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos deleniti sit distinctio voluptatum amet fuga
+        possimus, rem, ullam itaque repellat ipsam quibusdam. Deserunt vel numquam cupiditate, qui aliquid culpa
+        voluptate?</p>
+    <div class="wow fadeInDown">
+        Content to Reveal Here
+    </div>
+
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos deleniti sit distinctio voluptatum amet fuga
+        possimus, rem, ullam itaque repellat ipsam quibusdam. Deserunt vel numquam cupiditate, qui aliquid culpa
+        voluptate?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos deleniti sit distinctio voluptatum amet fuga
+        possimus, rem, ullam itaque repellat ipsam quibusdam. Deserunt vel numquam cupiditate, qui aliquid culpa
+        voluptate?</p>
+
+    <div class="wow bounceInUp">
+        Content to Reveal Here
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos deleniti sit distinctio voluptatum amet fuga
+        possimus, rem, ullam itaque repellat ipsam quibusdam. Deserunt vel numquam cupiditate, qui aliquid culpa
+        voluptate?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos deleniti sit distinctio voluptatum amet fuga
+        possimus, rem, ullam itaque repellat ipsam quibusdam. Deserunt vel numquam cupiditate, qui aliquid culpa
+        voluptate?</p>
+
+
+    <script src="wow.min.js"></script>
+    <script>
+        var wow = new WOW(
+            {
+                boxClass: 'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset: 0,          // distance to the element when triggering the animation (default is 0)
+                mobile: true,       // trigger animations on mobile devices (default is true)
+                live: true,       // act on asynchronously loaded content (default is true)
+                callback: function (box) {
+                    // the callback is fired every time an animation is started
+                    // the argument that is passed in is the DOM node being animated
+                },
+                scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                resetAnimation: true,     // reset animation on end (default is true)
+            }
+        );
+        wow.init();
+    </script>
+
+</body>
+
+</html>
