@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        .demo {
+            background-color: tomato;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Add Class</button>
+    <button id="btn2">Remove Class</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deleniti quia a, laboriosam odit temporibus iusto
+        consectetur libero iste tenetur, aspernatur perspiciatis tempore necessitatibus, dicta magnam impedit suscipit
+        qui fugit!</p>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#btn1").click(function () {
+                $("p").addClass("demo");
+            });
+            $("#btn2").click(function () {
+                $("p").removeClass("demo");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
